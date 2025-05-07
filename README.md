@@ -12,19 +12,19 @@ An enhanced Transformer model that uses technical indicators (e.g., RSI, MACD, B
 
 **🧠 Key Concepts Used:-**
 
-Transformer Encoder (using PyTorch)
+🔹Transformer Encoder (using PyTorch)
 
-MinMaxScaler for scaling price data
+🔹MinMaxScaler for scaling price data
 
-Binary Classification (Buy/Sell)
+🔹Binary Classification (Buy/Sell)
 
-ROC-AUC and Accuracy Metrics
+🔹ROC-AUC and Accuracy Metrics
 
-Monte Carlo Simulations for price forecasting
+🔹Monte Carlo Simulations for price forecasting
 
-Sharpe Ratio calculation for risk-adjusted returns
+🔹Sharpe Ratio calculation for risk-adjusted returns
 
-Technical Indicators (in the enhanced model)
+🔹Technical Indicators (in the enhanced model)
 
 **📝 Requirements:-**
 
@@ -36,13 +36,13 @@ pip install pandas numpy matplotlib scikit-learn seaborn torch
 
 Make sure the dataset file 5yrdataset.csv is present in the same directory. The dataset should have the following columns:
 
-date
+🔹date
 
-Name (stock ticker)
+🔹Name (stock ticker)
 
-close
+🔹close
 
-open, high, low, volume (used in technical indicator model)
+🔹open, high, low, volume (used in technical indicator model)
 
 **▶️ How to Run:-**
 
@@ -70,31 +70,31 @@ Takes the past 30 days of data to predict the next day’s movement.
 
 Outputs:
 
-Accuracy and ROC-AUC score
+🔹Accuracy and ROC-AUC score
 
-ROC Curve
+🔹ROC Curve
 
-BUY/SELL signal graph
+🔹BUY/SELL signal graph
 
-Model’s verdict (BUY/SELL tendency)
+🔹Model’s verdict (BUY/SELL tendency)
 
-Sharpe Ratio calculation
+🔹Sharpe Ratio calculation
 
-Monte Carlo simulation of 100 future days over 500 simulations
+🔹Monte Carlo simulation of 100 future days over 500 simulations
 
 🧩 Model 1: Without Technical Indicators
 
-Uses only the scaled closing price as input to the Transformer.
+🔹Uses only the scaled closing price as input to the Transformer.
 
-Basic but effective for trend-based prediction.
+🔹Basic but effective for trend-based prediction.
 
 🧩 Model 2: With Technical Indicators
 
-Adds RSI, MACD, EMA, SMA, Bollinger Bands, Momentum, etc., to the features.
+🔹Adds RSI, MACD, EMA, SMA, Bollinger Bands, Momentum, etc., to the features.
 
-Designed to capture nuanced market signals.
+🔹Designed to capture nuanced market signals.
 
-More complex and often more accurate.
+🔹More complex and often more accurate.
 
 **🧪 Output Example:-**
 
@@ -121,29 +121,29 @@ Alpha (Risk-Free Rate): 5.00%
 
 **📊 Visualizations:-**
 
-ROC Curve: Performance evaluation.
+🔹ROC Curve: Performance evaluation.
 
-Buy/Sell Signal Plot: Indicates model decisions on historical price.
+🔹Buy/Sell Signal Plot: Indicates model decisions on historical price.
 
-Monte Carlo Simulation: Simulated future price paths.
+🔹Monte Carlo Simulation: Simulated future price paths.
 
 **📚 Future Improvements:-**
 
-Integration with live data APIs (like Yahoo Finance or Alpha Vantage)
+🔹Integration with live data APIs (like Yahoo Finance or Alpha Vantage)
 
-Use GPU acceleration for faster training
+🔹Use GPU acceleration for faster training
 
-Convert into Flask app or Streamlit dashboard
+🔹Convert into Flask app or Streamlit dashboard
 
-Add cross-validation and hyperparameter tuning
+🔹Add cross-validation and hyperparameter tuning
 
 **💡 Notes:-**
 
-The Transformer model captures temporal dependencies in price trends.
+🔹The Transformer model captures temporal dependencies in price trends.
 
-Adding technical indicators provides feature richness to the model.
+🔹Adding technical indicators provides feature richness to the model.
 
-Always use financial models as decision support tools, not as guarantees.
+🔹Always use financial models as decision support tools, not as guarantees.
 
 **📬 Contact:-**
 
