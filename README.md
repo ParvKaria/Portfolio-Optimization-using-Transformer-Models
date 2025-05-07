@@ -1,4 +1,4 @@
-****📊 Stock Price Movement Prediction Using Transformers**
+****📊 Stock Price Movement Prediction Using Transformers****
 
 This repository contains two Transformer-based deep learning models for binary classification of stock price movements — with and without the use of technical indicators. The goal is to predict whether a stock's price will go up (BUY) or go down (SELL) the next day, using historical data from a 5-year dataset.
 
